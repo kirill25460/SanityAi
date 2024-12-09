@@ -1,31 +1,38 @@
 import {
   HeaderContainer,
-  Link,
+  NLink,
   NavItem,
   NavList,
   NavSpan,
+  StyledLink,
 } from './Header.styled';
 
+
 export const Header = () => {
+
+
+
   return (
     <HeaderContainer>
+        <StyledLink to="/SanityAi" ><NavSpan>SANITY AI</NavSpan></StyledLink>
       <NavList>
         <NavItem>
-          <Link to="/Products" >
+        <StyledLink  to="/SanityAi#Products">
             <NavSpan>Products</NavSpan>
-          </Link>
+          </StyledLink>
         </NavItem>
         <NavItem>
-          <Link to="/Company" >
+          <NLink to="/Company" >
             <NavSpan>Company</NavSpan>
-          </Link>
+          </NLink>
         </NavItem>
         <NavItem>
-          <Link to="/Services" >
+          <NLink to="/Services" >
             <NavSpan>Services</NavSpan>
-          </Link>
+          </NLink>
         </NavItem>
       </NavList>
+      <p>Sign up</p>
     </HeaderContainer>
   );
 };

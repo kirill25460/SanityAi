@@ -6,7 +6,7 @@ import medusa3 from "../../images/medusa3.png";
 
 export const Main = () => {
     return (
-   <MainContainer>
+   <MainContainer id="SanityAi">
    <img  src={MainImg} alt="SANITYAI" />
    <MedusaImg1 src={medusa1} alt="Medusa1"/>
    <MedusaImg2 src={medusa2} alt="Medusa2"/>

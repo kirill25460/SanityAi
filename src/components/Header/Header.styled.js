@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
@@ -7,20 +8,24 @@ export const HeaderContainer = styled.header`
   height: 80px;
   padding-left: 15px;
   padding-right: 15px;
-  justify-content: center;
-position: absolute;
+  justify-content: space-between;
+position: fixed;
+z-index: 999;
   background-color: transparent;
-  left: 50%;
-  transform: translate(-50%);
+  width: 100vw;
+
   @media (min-width: 768px) {
  
   }
 `;
 
 
+export const StyledLink = styled(HashLink)`
+  text-decoration: none;
 
+`;
 
-export const Link = styled(NavLink)`
+export const NLink = styled(NavLink)`
   text-decoration: none;
   color: #fff;
   width: 100%;
@@ -76,7 +81,7 @@ line-height: 18px;
 display: flex;
 align-items: center;
 
-color: #FFFFFF;
+color: #000;
 
 
   @media (min-width: 768px) {
