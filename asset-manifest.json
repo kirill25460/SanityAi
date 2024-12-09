@@ -1,13 +1,19 @@
 {
   "files": {
     "main.css": "/SanityAi/static/css/main.7acaea2f.css",
-    "main.js": "/SanityAi/static/js/main.08696ed5.js",
+    "main.js": "/SanityAi/static/js/main.b9393065.js",
+    "static/media/big_card.png": "/SanityAi/static/media/big_card.5785709850f9856b4841.png",
+    "static/media/Vector.png": "/SanityAi/static/media/Vector.49b8cb279e1b250b2279.png",
+    "static/media/medusa1.png": "/SanityAi/static/media/medusa1.2700a68cb28f234bdb4d.png",
+    "static/media/medusa2.png": "/SanityAi/static/media/medusa2.9ad2fb6efbb2f78000ea.png",
+    "static/media/small_card.png": "/SanityAi/static/media/small_card.c58510aa9520a160f40c.png",
+    "static/media/medusa3.png": "/SanityAi/static/media/medusa3.45019be5a39675b72c8c.png",
     "index.html": "/SanityAi/index.html",
     "main.7acaea2f.css.map": "/SanityAi/static/css/main.7acaea2f.css.map",
-    "main.08696ed5.js.map": "/SanityAi/static/js/main.08696ed5.js.map"
+    "main.b9393065.js.map": "/SanityAi/static/js/main.b9393065.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.08696ed5.js"
+    "static/js/main.b9393065.js"
   ]
 }
