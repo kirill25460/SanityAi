@@ -10,7 +10,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      Хуй и пизда играли в поезда 
     </div>
   );
 };
