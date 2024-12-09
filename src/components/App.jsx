@@ -1,16 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
+import { Header } from "./Header/Header";
+import { SanityMainPage } from 'pages/SanityMainPage/SanityMainPage';
+import { CompanyPage } from 'pages/CompanyPage/CompanyPage';
+import { ServicesPage } from 'pages/ServicesPage/ServicesPage';
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      Хуй и пизда играли в поезда 
-    </div>
+ <>
+ <Header />
+ <Routes>
+        <Route path="/" element={<SanityMainPage />} />
+        <Route path="/SanityAi" element={<SanityMainPage />} />
+        <Route path="/Company" element={<CompanyPage />} />
+        <Route path="/Services" element={<ServicesPage />} />
+      </Routes>
+ </>
   );
 };
