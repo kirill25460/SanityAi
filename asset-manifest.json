@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kirill25460/SanityAi.git/static/css/main.7acaea2f.css",
-    "main.js": "/kirill25460/SanityAi.git/static/js/main.08696ed5.js",
-    "index.html": "/kirill25460/SanityAi.git/index.html",
-    "main.7acaea2f.css.map": "/kirill25460/SanityAi.git/static/css/main.7acaea2f.css.map",
-    "main.08696ed5.js.map": "/kirill25460/SanityAi.git/static/js/main.08696ed5.js.map"
+    "main.css": "/SanityAi/static/css/main.7acaea2f.css",
+    "main.js": "/SanityAi/static/js/main.08696ed5.js",
+    "index.html": "/SanityAi/index.html",
+    "main.7acaea2f.css.map": "/SanityAi/static/css/main.7acaea2f.css.map",
+    "main.08696ed5.js.map": "/SanityAi/static/js/main.08696ed5.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
