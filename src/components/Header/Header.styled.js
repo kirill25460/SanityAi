@@ -6,30 +6,22 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   height: 80px;
-  padding-left: 15px;
-  padding-right: 15px;
   justify-content: space-between;
-position: fixed;
-z-index: 999;
-  background-color: transparent;
-  width: 100vw;
-
+  position: fixed;
+  z-index: 999;
+  width: 100%;
   @media (min-width: 768px) {
- 
   }
 `;
 
-
 export const StyledLink = styled(HashLink)`
   text-decoration: none;
-
 `;
 
 export const NLink = styled(NavLink)`
   text-decoration: none;
-  color: #fff;
-  width: 100%;
-  
+  color: ${({ isScrolled }) => (isScrolled ? '#000' : '#fff')};
+  transition: color 0.3s;
 `;
 
 export const NavList = styled.ul`
@@ -37,59 +29,78 @@ export const NavList = styled.ul`
   align-items: center;
   padding: 0;
   margin: 0;
-  gap:40px;
-  justify-content: space-between;
+  gap: 30px; /* Единообразные расстояния между элементами */
 
   @media (min-width: 768px) {
-  
+    gap: 40px; /* Увеличение расстояний на больших экранах */
   }
 `;
 
 export const NavItem = styled.li`
   list-style-type: none;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: ${({ isScrolled }) => (isScrolled ? '#000' : '#fff')};
+  transition: color 0.3s;
 
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
-
-
-  @media (min-width: 768px) {
-
-
+  &:hover {
+    color: #007bff;
   }
 
   @media (min-width: 1400px) {
-   
+    font-size: 16px;
+    line-height: 20px; /* Более крупный текст на больших экранах */
   }
 `;
 
 export const NavSpan = styled.span`
   position: relative;
-  text-decoration: none;
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-display: flex;
-align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: ${({ isScrolled }) => (isScrolled ? '#000' : '#fff')};
+  transition: color 0.3s;
+  margin-left: 60px;
 
-color: #000;
-
-
-  @media (min-width: 768px) {
-
+  &:hover {
+    color: #007bff;
   }
 
   @media (min-width: 1400px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+`;
 
+export const SignSpan = styled.p`
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: ${({ isScrolled }) => (isScrolled ? '#000' : '#fff')};
+  transition: color 0.3s;
+  margin-right: 60px;
+
+  &:hover {
+    color: #007bff;
   }
 
+  @media (min-width: 1400px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 `;
