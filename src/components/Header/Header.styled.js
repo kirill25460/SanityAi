@@ -10,8 +10,10 @@ export const HeaderContainer = styled.header`
   position: fixed;
   z-index: 999;
   width: 100%;
-  @media (min-width: 768px) {
-  }
+  background-color: ${({ isScrolled }) => (isScrolled ? '#fff' : 'transparent')};
+  box-shadow: ${({ isScrolled }) => (isScrolled ? '0px 4px 10px rgba(0, 0, 0, 0.3)' : 'none')};
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+
 `;
 
 export const StyledLink = styled(HashLink)`
