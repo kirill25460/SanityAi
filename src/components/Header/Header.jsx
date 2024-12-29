@@ -1,24 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import {
-  HeaderContainer,
-  StyledLink,
-  NLink,
-  NavList,
-  NavItem,
-  NavSpan,
-  SignSpan,
-} from './Header.styled';
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { HeaderArrow, HeaderContainer, NavItem, NavList, SignUp, StyledLink } from './Header.styled';
+import arrow from '../../images/arrowHeader.svg'
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > window.innerHeight); // Проверяет, прошли ли 100vh
+      setIsScrolled(window.scrollY > window.innerHeight);
     };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -26,27 +20,13 @@ export const Header = () => {
 
   return (
     <HeaderContainer isScrolled={isScrolled}>
-      <StyledLink to="/SanityAi">
-        <NavSpan isScrolled={isScrolled}>SANITY AI</NavSpan>
-      </StyledLink>
+      <StyledLink to="/SanityAi" isScrolled={isScrolled}>SANITY AI</StyledLink>
       <NavList>
-        <NavItem>
-          <StyledLink to="/SanityAi#Products">
-            <NavSpan isScrolled={isScrolled}>Products</NavSpan>
-          </StyledLink>
-        </NavItem>
-        <NavItem>
-          <NLink to="/Company">
-            <NavSpan isScrolled={isScrolled}>Company</NavSpan>
-          </NLink>
-        </NavItem>
-        <NavItem>
-          <NLink to="/Services">
-            <NavSpan isScrolled={isScrolled}>Services</NavSpan>
-          </NLink>
-        </NavItem>
+        <NavItem to="/SanityAi#Products" isScrolled={isScrolled}>Products</NavItem>
+        <NavItem to="/Company" isScrolled={isScrolled}>Company</NavItem>
+        <NavItem to="/Services" isScrolled={isScrolled}>Services</NavItem>
       </NavList>
-      <SignSpan isScrolled={isScrolled}>Sign up</SignSpan>
+      <SignUp isScrolled={isScrolled}>Sign up <HeaderArrow isScrolled={isScrolled} /></SignUp>
     </HeaderContainer>
   );
 };

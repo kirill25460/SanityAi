@@ -47,6 +47,13 @@ export const CardItem = styled.div`
   width: 309px; // Ширина карточки
   margin: 10px;
   gap: 30px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Плавный переход */
+
+  &:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    transform: translateY(-5px); /* Легкое поднятие карточки */
+  }
 `;
 
 // export const BigCard = styled.img`
