@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.div`
   background-color: black;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;

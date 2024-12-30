@@ -7,14 +7,13 @@ import { ServicesPage } from 'pages/ServicesPage/ServicesPage';
 
 export const App = () => {
   return (
- <>
- <Header />
- <Routes>
+    <>
+      <Routes>
         <Route path="/" element={<SanityMainPage />} />
         <Route path="/SanityAi" element={<SanityMainPage />} />
         <Route path="/Company" element={<CompanyPage />} />
         <Route path="/Services" element={<ServicesPage />} />
       </Routes>
- </>
+    </>
   );
 };

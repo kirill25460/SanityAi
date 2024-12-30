@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import { HeaderArrow, HeaderContainer, NavItem, NavList, SignUp, StyledLink } from './Header.styled';
-import arrow from '../../images/arrowHeader.svg'
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
