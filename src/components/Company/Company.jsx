@@ -1,4 +1,12 @@
-import { CompanyMainContainer, CompanyMainTitle, CompanyTitle, CompanySubTitle, CompanyMainTitleContainer, MainSquirrel } from "./Company.styled";
+import {
+  CompanyMainContainer,
+  CompanyMainTitle,
+  CompanyTitle,
+  CompanySubTitle,
+  CompanyMainTitleContainer,
+  MainSquirrel,
+  ValueCompanyTitle,
+} from './Company.styled';
 import squirrel from '../../images/squirrel.png';
 
 export const Company = () => {
@@ -9,7 +17,12 @@ export const Company = () => {
         <CompanyMainTitle>From Scratch to Perfection</CompanyMainTitle>
         <MainSquirrel src={squirrel} alt="squirrel" />
       </CompanyMainTitleContainer>
-      <CompanySubTitle>Про наш принцип роботи, яким інструментам віддаєтся перевага, філософія компанії. Про наш принцип роботи, яким інструментам віддаєтся перевага, філософія компанії. </CompanySubTitle>
-    </CompanyMainContainer >
+      <CompanySubTitle>
+        Про наш принцип роботи, яким інструментам віддаєтся перевага, філософія
+        компанії. Про наш принцип роботи, яким інструментам віддаєтся перевага,
+        філософія компанії.{' '}
+      </CompanySubTitle>
+      <ValueCompanyTitle>Цінності компанії</ValueCompanyTitle>
+    </CompanyMainContainer>
   );
 };
