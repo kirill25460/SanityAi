@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SanityAi/static/css/main.7acaea2f.css",
+    "main.js": "/SanityAi/static/js/main.d8afeba7.js",
+    "static/media/back.png": "/SanityAi/static/media/back.32c1da6d837758e71472.png",
+    "static/media/Vector.png": "/SanityAi/static/media/Vector.49b8cb279e1b250b2279.png",
+    "static/media/medusa1.png": "/SanityAi/static/media/medusa1.2700a68cb28f234bdb4d.png",
+    "static/media/medusa2.png": "/SanityAi/static/media/medusa2.9ad2fb6efbb2f78000ea.png",
+    "static/media/medusa3.png": "/SanityAi/static/media/medusa3.45019be5a39675b72c8c.png",
+    "index.html": "/SanityAi/index.html",
+    "static/media/headphones.svg": "/SanityAi/static/media/headphones.eb22341f7f2ec944dd9a1bb331ade164.svg",
+    "static/media/arrowHeader.svg": "/SanityAi/static/media/arrowHeader.8eb0929cfe1e595ba2a5266134c2ce41.svg",
+    "main.7acaea2f.css.map": "/SanityAi/static/css/main.7acaea2f.css.map",
+    "main.d8afeba7.js.map": "/SanityAi/static/js/main.d8afeba7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.d8afeba7.js"
+  ]
+}
