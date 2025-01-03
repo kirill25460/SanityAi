@@ -21,36 +21,36 @@ export const Products = () => {
         <CardList>
           <CardItem>
             <ImageBlock src={block} position="top" height="418px" />
-            <ImageBlock src={block} position="bottom" height="65px">
+            <ImageBlock src={block} position="bottom" height="65px" className="bottom-block">
               <ImageBlockText>Call Center QA</ImageBlockText>
             </ImageBlock>
           </CardItem>
           <CardItem>
-            <ImageBlock src={block} position="top" height="65px">
-              <ImageBlockText>Call Center QA</ImageBlockText>
-            </ImageBlock>
-            <ImageBlock src={block} position="bottom" height="418px" />
-          </CardItem>
-          <CardItem>
-            <ImageBlock src={block} position="top" height="418px" />
-            <ImageBlock src={block} position="bottom" height="65px">
-              <ImageBlockText>Call Center QA</ImageBlockText>
-            </ImageBlock>
-          </CardItem>
-          <CardItem>
-            <ImageBlock src={block} position="top" height="65px">
+            <ImageBlock src={block} position="top" height="65px" className="bottom-block">
               <ImageBlockText>Call Center QA</ImageBlockText>
             </ImageBlock>
             <ImageBlock src={block} position="bottom" height="418px" />
           </CardItem>
           <CardItem>
             <ImageBlock src={block} position="top" height="418px" />
-            <ImageBlock src={block} position="bottom" height="65px">
+            <ImageBlock src={block} position="bottom" height="65px" className="bottom-block">
               <ImageBlockText>Call Center QA</ImageBlockText>
             </ImageBlock>
           </CardItem>
           <CardItem>
-            <ImageBlock src={block} position="top" height="65px">
+            <ImageBlock src={block} position="top" height="65px" className="bottom-block">
+              <ImageBlockText>Call Center QA</ImageBlockText>
+            </ImageBlock>
+            <ImageBlock src={block} position="bottom" height="418px" />
+          </CardItem>
+          <CardItem>
+            <ImageBlock src={block} position="top" height="418px" />
+            <ImageBlock src={block} position="bottom" height="65px" className="bottom-block">
+              <ImageBlockText>Call Center QA</ImageBlockText>
+            </ImageBlock>
+          </CardItem>
+          <CardItem>
+            <ImageBlock src={block} position="top" height="65px" className="bottom-block">
               <ImageBlockText>Call Center QA</ImageBlockText>
             </ImageBlock>
             <ImageBlock src={block} position="bottom" height="418px" />

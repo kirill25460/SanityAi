@@ -51,35 +51,14 @@ export const CardItem = styled.div`
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Плавный переход */
 
   &:hover {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Добавляем тень */
     transform: translateY(-5px); /* Легкое поднятие карточки */
+
+    /* Изменение стиля для дочернего блока с height 65px */
+    & .bottom-block {
+      background: black !important; /* Изменение фона при ховере */
+    }
   }
 `;
-
-// export const BigCard = styled.img`
-//   width: 309px;
-//   height: 418px;
-//   background: linear-gradient(
-//       180deg,
-//       rgba(0, 0, 0, 0) 64.35%,
-//       rgba(0, 0, 0, 0.37) 100%
-//     ),
-//     url(image.png);
-//   border-radius: 5px;
-// `;
-
-// export const SmallCard = styled.img`
-//   margin-top: 15px;
-//   width: 309px;
-//   height: 65px;
-//   background: linear-gradient(
-//       180deg,
-//       rgba(0, 0, 0, 0) -310.46%,
-//       rgba(0, 0, 0, 0.37) 100%
-//     ),
-//     url(image.png);
-//   border-radius: 5px;
-// `;
 
 export const ImageBlock = styled.div`
   width: 309px;
@@ -91,6 +70,11 @@ export const ImageBlock = styled.div`
   margin: 0; /* убираем маргин для отсутствия отступов */
   display: flex;
   align-items: center;
+  border-radius: 5px;
+  
+  
+  /* Изначальный фон для блока */
+  /* background: ${props => (props.height === '65px' ? 'transparent' : '')}; */
 `;
 
 export const ImageBlockText = styled.p`
