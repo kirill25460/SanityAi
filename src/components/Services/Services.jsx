@@ -16,8 +16,13 @@ import {
   ServicesTopCon,
   ServicesTopImgContainer,
   ServicesTopImgContainerChoose,
+  ToKnowImage,
+  ToKnowMoreArrowBlock,
+  ToKnowMoreBlock,
+  ToKnowMoreText,
 } from './Services.styled';
 import headphones from '../../images/headphones.svg';
+import longArrow from '../../images/longArrow.png'
 
 const Services = () => {
   const [selectedIndexes, setSelectedIndexes] = useState([]); // Массив выбранных индексов
@@ -120,6 +125,10 @@ const Services = () => {
           );
         })}
       </ServicesBlockContainer>
+      <ToKnowMoreBlock>
+        <ToKnowMoreText>Дізнатись більше</ToKnowMoreText>
+        <ToKnowMoreArrowBlock><ToKnowImage src={longArrow} alt='longArrow' /></ToKnowMoreArrowBlock>
+      </ToKnowMoreBlock>
     </ServicesMainContainer>
   );
 };

@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 const SvgComponent = ({ color = 'black' }) => (
   <svg width="84" height="59" viewBox="0 0 84 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M74.4201 34.5588C74.4201 25.9237 70.9898 17.6422 64.8838 11.5363C58.7779 5.43029 50.4964 2 41.8613 2C33.2262 2 24.9447 5.43029 18.8387 11.5362C12.7328 17.6422 9.30249 25.9237 9.30249 34.5588" stroke={color} strokeWidth="4"/>
-    <path d="M1.62599 40.61C1.43272 39.2553 1.94538 37.8959 2.98502 37.0061L11.8663 29.4052C14.3086 27.315 18.0939 28.8137 18.4435 32.0092L20.7255 52.8705C20.9657 55.0665 19.3802 57.0415 17.1842 57.2817L8.0551 58.2803C5.90975 58.515 3.96504 57.0055 3.66024 54.869L1.62599 40.61Z" fill={color}/>
-    <path d="M82.2178 40.61C82.411 39.2553 81.8984 37.8959 80.8587 37.0061L71.9774 29.4052C69.5351 27.315 65.7498 28.8137 65.4003 32.0092L63.1183 52.8705C62.878 55.0665 64.4635 57.0415 66.6596 57.2817L75.7886 58.2803C77.934 58.515 79.8787 57.0055 80.1835 54.869L82.2178 40.61Z" fill={color}/>
+    <path d="M74.4201 34.5588C74.4201 25.9237 70.9898 17.6422 64.8838 11.5363C58.7779 5.43029 50.4964 2 41.8613 2C33.2262 2 24.9447 5.43029 18.8387 11.5362C12.7328 17.6422 9.30249 25.9237 9.30249 34.5588" stroke={color} strokeWidth="4" />
+    <path d="M1.62599 40.61C1.43272 39.2553 1.94538 37.8959 2.98502 37.0061L11.8663 29.4052C14.3086 27.315 18.0939 28.8137 18.4435 32.0092L20.7255 52.8705C20.9657 55.0665 19.3802 57.0415 17.1842 57.2817L8.0551 58.2803C5.90975 58.515 3.96504 57.0055 3.66024 54.869L1.62599 40.61Z" fill={color} />
+    <path d="M82.2178 40.61C82.411 39.2553 81.8984 37.8959 80.8587 37.0061L71.9774 29.4052C69.5351 27.315 65.7498 28.8137 65.4003 32.0092L63.1183 52.8705C62.878 55.0665 64.4635 57.0415 66.6596 57.2817L75.7886 58.2803C77.934 58.515 79.8787 57.0055 80.1835 54.869L82.2178 40.61Z" fill={color} />
   </svg>
 );
 
@@ -67,7 +67,7 @@ export const ServicesBlockContainer = styled.ul`
   grid-template-columns: repeat(2, 1fr); /* Устанавливает 2 колонки */
   gap: 60px; /* Устанавливает отступы между элементами */
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 120px 0;
   padding: 0;
 `;
 
@@ -187,3 +187,35 @@ export const ServicesBlockSubTitle = styled.p`
   line-height: 30px;
   color: #000000;
 `;
+
+export const ToKnowMoreBlock = styled.div`
+  display: flex;
+  align-items: center;
+  gap:120px;
+`
+
+export const ToKnowMoreText = styled.h6`
+width: 373px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 70px;
+line-height: 100%;
+color: #000000;
+margin:0;
+`
+
+export const ToKnowMoreArrowBlock = styled.div`
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+width:827px;
+height: 126px;
+background: radial-gradient(154.72% 265.48% at 100% 89.68%, #090909 0%, #202020 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+border-radius: 10px;
+cursor: pointer;
+`
+
+export const ToKnowImage = styled.img`
+
+`

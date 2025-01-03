@@ -6,7 +6,7 @@ const HeaderWhite = () => {
         <HeaderContainerWhite>
             <StyledLinkWhite to="/SanityAi">SANITY AI</StyledLinkWhite>
             <NavListWhite>
-                <NavItemWhite to="/SanityAi#Products" >Products</NavItemWhite>
+                <NavItemWhite to="/SanityAi" >Products</NavItemWhite>
                 <NavItemWhite to="/Company">Company</NavItemWhite>
                 <NavItemWhite to="/Services">Services</NavItemWhite>
             </NavListWhite>

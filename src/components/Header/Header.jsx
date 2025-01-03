@@ -18,7 +18,7 @@ export const Header = () => {
     <HeaderContainer isScrolled={isScrolled}>
       <StyledLink to="/SanityAi" isScrolled={isScrolled}>SANITY AI</StyledLink>
       <NavList>
-        <NavItem to="/SanityAi#Products" isScrolled={isScrolled}>Products</NavItem>
+        <NavItem to="/SanityAi" isScrolled={isScrolled}>Products</NavItem>
         <NavItem to="/Company" isScrolled={isScrolled}>Company</NavItem>
         <NavItem to="/Services" isScrolled={isScrolled}>Services</NavItem>
       </NavList>
