@@ -4,13 +4,9 @@ import {
   CardWrap,
   CardList,
   CardItem,
-  BigCard,
-  SmallCard,
   ImageBlock,
   ImageBlockText,
 } from './Products.styled';
-import bigCard from '../../images/big_card.png';
-import smallCard from '../../images/small_card.png';
 import block from '../../images/back.png';
 
 export const Products = () => {

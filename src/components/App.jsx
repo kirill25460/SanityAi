@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import { Header } from "./Header/Header";
 import { SanityMainPage } from 'pages/SanityMainPage/SanityMainPage';
 import { CompanyPage } from 'pages/CompanyPage/CompanyPage';
 import { ServicesPage } from 'pages/ServicesPage/ServicesPage';
