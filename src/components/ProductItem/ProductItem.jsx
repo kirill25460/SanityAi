@@ -19,7 +19,10 @@ import {
   Block360x120BotText,
   TopRow,
   BotRow,
+  ProductInfoRightContainer,
+  RightTopImg,
 } from './ProductItem.styled';
+import back from '../../images/back.png'
 
 const ProductItem = () => {
   return (
@@ -56,6 +59,9 @@ const ProductItem = () => {
             </BotRow>
           </ProductInfoLeftBotContainer>
         </ProductInfoLeftContainer>
+        <ProductInfoRightContainer>
+            <RightTopImg src={back}/>
+        </ProductInfoRightContainer>
       </ProductInfoContainer>
     </ProductMainContainer>
   );
